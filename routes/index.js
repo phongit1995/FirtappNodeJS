@@ -16,7 +16,9 @@ const User = mongoose.model("user",schema);
 /* GET home page. */
 router.get('/', function(req, res, next) {
   
-  res.render('index', { title: 'Express' });
+  User.find({},function(erro){
+    res.send("");
+  });
 });
 router.get('/xem', function(req, res, next) {
   
