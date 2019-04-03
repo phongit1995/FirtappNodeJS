@@ -17,7 +17,7 @@ const User = mongoose.model("user",schema);
 router.get('/', function(req, res, next) {
   
   User.find({},function(erro){
-    res.send("");
+    res.send("Chào Mừng Tới Với Node JS");
   });
 });
 router.get('/xem', function(req, res, next) {
